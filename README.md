@@ -8,7 +8,7 @@ ALCUCOA Accreditation
 With this online documentation platform, you will be able to navigation through various areas of accredictation per program.
 
 # Developers
-<b>Bailon, Abigail</b> - Lead Programmer
-<b>Marquez, John Christian</b> - Programmer
-<b>Natividad, Dianne</b> - UI/UX Designer
-<b>Tamashiro, Rica Mae</b> - UI/UX Designer
+<b>Bailon, Abigail</b> - Lead Programmer<br>
+<b>Marquez, John Christian</b> - Programmer<br>
+<b>Natividad, Dianne</b> - UI/UX Designer<br>
+<b>Tamashiro, Rica Mae</b> - UI/UX Designer<br>
