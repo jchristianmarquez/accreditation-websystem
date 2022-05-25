@@ -12,3 +12,8 @@ With this online documentation platform, you will be able to navigation through 
 <b>Marquez, John Christian</b> - Programmer<br>
 <b>Natividad, Dianne</b> - UI/UX Designer<br>
 <b>Tamashiro, Rica Mae</b> - UI/UX Designer<br>
+
+
+## LOG IN PAGE
+
+<p align="center"><img src="/Readme Images/Log In Page.png"></p>
