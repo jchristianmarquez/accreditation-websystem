@@ -1,0 +1,43 @@
+.tblview {
+    margin-top: 5px;
+    border-width: 3px;
+}
+
+.tblview p {
+    padding: 1px;
+    color: black;
+}
+
+.tblview td{
+    vertical-align: middle;
+    border-width: 2px;
+    border-color: gray;
+}
+.tblview th{
+    vertical-align: middle;
+    border-width: 2px;
+    border-color: gray;
+}
+
+.celltext {
+    position: relative;
+}
+
+.editbutton {
+    display:none;
+    position: absolute;
+    border-radius: 30%;
+    top: 45%;
+    left: 45%;
+    padding: 2px 2px;
+}
+
+.col1 p{
+    text-align: center;
+    width: 50px;
+}
+.othercol p{
+    text-align: left;
+    width: 300px;
+}
+
