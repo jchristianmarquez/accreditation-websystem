@@ -12,13 +12,13 @@
         {{-- Scripts --}}
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        
+
         {{-- Bootstrap / CSS Files --}}
         <link rel="stylesheet" href="{{ asset('css/login.css') }} " type="text/css">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
 
         <!-- Styles -->
     </head>
@@ -30,8 +30,8 @@
                     <img src ={{ asset('images/CCC-logo.png') }}>
                     <h3>CITY COLLEGE OF CALAMBA </h3>
                     <h6>ALCUCOA Accreditation</h6>
-                    <h6>Online Documentation</h6> 
-                    <p>With this online documentation platform, you will be able to navigation through 
+                    <h6>Online Documentation</h6>
+                    <p>With this online documentation platform, you will be able to navigation through
                       various areas of accredictation per program.
                     </p>
                     <p>Kindly login using the credentials sent to you by the CCC Accreditation Team.</p>
