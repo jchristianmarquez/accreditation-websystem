@@ -21,7 +21,6 @@
     justify-content: flex-start;
     margin-left: 2.8%;
 }
-
 .accred-header .logo-img{
     height: 65px;
     width: 65px;
@@ -29,10 +28,12 @@
 
 .accred-header h1 ,.accred-header a{
     font-size: 32px;
+    margin: auto;
     font-weight: bold;
     letter-spacing: 1.2px;
     color: #fff;
 }
+
 .accred-header .site-header{
     margin-left: 95px;
     margin-top: 5px;
@@ -43,6 +44,23 @@
     justify-content: flex-end;
     margin-right: 7%;
 }
+/*Responsive Text Size starts here */
+@media screen and (min-width: 861px) {
+    .accred-header h1 ,.accred-header a {
+      font-size: 32px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .accred-header h1 ,.accred-header a {
+      font-size: 24px;
+    }
+    .accred-header .site-header{
+        margin-left: 15px;
+        margin-top: 12px;
+    }
+}
+/*Responsive Text Size ends here */
+
 
 /*Header ends here */
 
@@ -118,6 +136,9 @@ nav ul ul li {
     width: 370px;
     display: list-item;
     border-bottom: 1px dotted #fff;
+}
+.short {
+    width: 175px;
 }
 
 nav ul ul li a {
@@ -1419,6 +1440,131 @@ footer .footer-content li i {
 }
 /*Footer ends here */
 
-/*Select Menu Starts here*/
+/*Select Program Starts here*/
+    .department-header-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 50px auto;
+    }
+    .department-heading h2 {
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #023FD8;
+        flex: 1 1 100%;
+    }
 
-/*Select Menu ends here*/
+    .department-heading p {
+        font-size: 25px;
+        margin-bottom: 50px;
+        color: #023FD8;
+        width: 50%;
+    }
+    @media screen and (min-width: 861px) {
+        .department-heading p {
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 860px) {
+        .department-heading p {
+            width: 80%;
+        }
+    }
+    .department-card-container{
+        width: 90%;
+        margin: 50px auto;
+    }
+    .department-card {
+        width: 100%;
+        background: #fff;
+        border: 1px solid #ccc;
+        margin-right: 25px;
+        margin-bottom: 50px;
+        transition: 0.3s;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+      }
+    .department-heading {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .department-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* justify-content: space-around; */
+        flex-flow: wrap;
+    }
+    .multi-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .department-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+      }
+    .card-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-header img {
+        width: 250px;
+    }
+    .card-body {
+        width: 250px;
+        padding: 30px 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #023FD8;
+    }
+    .card-body p {
+        min-height: 4.2em;
+        line-height: 1.4em;
+    }
+
+    .card-body .report-btn {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        text-decoration: none;
+        padding: 10px 5px;
+        font-size: 17px;
+        border-radius: 50px;
+    }
+    .card-body .dci-btn {
+        border: 1px solid #666666;
+        color:#666666;
+    }
+    .card-body .dbe-btn {
+        border: 1px solid #EF1833;
+        color:#EF1833;
+    }
+    .card-body .dte-btn {
+        border: 1px solid #49983C;
+        color:#49983C;
+    }
+    .card-body .dci-btn:hover {
+        color: #fff;
+        background-color: #666666;
+    }
+
+    .card-body .dbe-btn:hover {
+        color: #fff;
+        background-color: #EF1833;
+    }
+
+    .card-body .dte-btn:hover {
+        color: #fff;
+        background-color: #49983C;
+    }
+
+/*Select Program ends here*/

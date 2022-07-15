@@ -15,5 +15,10 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         $this->call(AdminUserSeeder::class);
+        $this->call(ReportTypeSeeder::class);
+        $this->call(AccreditationLevelSeeder::class);
+        $this->call(DepartmentSeeder::class);
+        $this->call(ProgramSeeder::class);
+
     }
 }
