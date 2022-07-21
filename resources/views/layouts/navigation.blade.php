@@ -2,16 +2,16 @@
     $departments = \App\Models\Department::all();
 @endphp
 
-<nav>
+<nav class="ccc-nav">
     <ul>
         <li><a href="#">Control Panel<i class="fa-solid fa-chevron-down"></i></a>
             <ul>
                 <li class="short"><a href="/departments">Departments</a></li><br>
                 <li class="short"><a href="/programs">Programs</a></li><br>
-                <li class="short"><a href="/templates">Table Templates</a></li><br>
+                <li class="short"><a href="/areas">Area Manager</a></li><br>
             </ul>
         </li>
-        <li><a>Area<i class="fa-solid fa-chevron-down"></i></a>
+        <li><a href="#">Area<i class="fa-solid fa-chevron-down"></i></a>
             <ul>
                 @foreach ($departments as $department)
                     <li><a href="/department/{{$department->shortname}}">{{$department->longname}}</a></li>

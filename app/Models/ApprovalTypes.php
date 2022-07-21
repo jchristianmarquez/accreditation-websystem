@@ -5,16 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Area extends Model
+class ApprovalTypes extends Model
 {
     use HasFactory;
+
     protected $fillable = [
-        'areaNumber',
-        'areaName',
-        'approvalType',
-        'director',
-        'qualityAssurance'
+        'approvalID',
+        'approver'
     ];
 
-    protected $table = 'areas';
+    protected $table = 'approval_types';
+
 }

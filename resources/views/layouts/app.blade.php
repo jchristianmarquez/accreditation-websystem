@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="{{ url('/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ url('/css/app.css') }}">
         <link rel="stylesheet" href="{{ url('/css/table_info.css') }}">
         <link rel="stylesheet" href="{{ url('/css/styles.css') }}">

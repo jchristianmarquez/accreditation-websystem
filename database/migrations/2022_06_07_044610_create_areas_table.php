@@ -15,9 +15,17 @@ class CreateAreasTable extends Migration
     {
         Schema::create('areas', function (Blueprint $table) {
             $table->id();
+
             $table->smallInteger('areaNumber')->unique();
             $table->string('areaName');
+            $table->smallInteger('publishStatus')->foreign();
             $table->timestamps();
+
+            $table->foreign('publishStatus')
+                ->references('publishID')
+                ->on('publish_statuses')
+                ->onDelete('cascade');
+
         });
     }
 
