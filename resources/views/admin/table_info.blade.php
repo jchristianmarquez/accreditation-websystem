@@ -1,15 +1,18 @@
 <x-app-layout>
-    <x-table tableType="area-manager" itemLabel="Area">
+    <x-table tableType="area-manager" itemLabel="Row">
         <x-slot name="table_header">
-            List of Areas
+            Table Information
+
             <x-slot name="rows">
                 <tr>
-                    <th>Area</th>
-                    <th>Area Title</th>
-                    <th>Status</th>
-                    <th>Actions</th>
+                    @foreach ($templates as $column)
+                        <th>{{$column->columnName}}</th>
+                    @endforeach
+                    <th colspan="1">Action</th>
                 </tr>
             </x-slot>
+
+
             <x-slot name="table_content">
                 @foreach ($areas as $area)
                 <tr>

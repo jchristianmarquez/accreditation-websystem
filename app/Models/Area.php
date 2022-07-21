@@ -11,9 +11,8 @@ class Area extends Model
     protected $fillable = [
         'areaNumber',
         'areaName',
-        'approvalType',
-        'director',
-        'qualityAssurance'
+        'publishStatus'
+
     ];
 
     protected $table = 'areas';

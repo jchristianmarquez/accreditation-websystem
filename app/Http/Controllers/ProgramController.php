@@ -36,7 +36,7 @@ class ProgramController extends Controller
         ]);
 
         event(new Registered($program));
-        return redirect()->back()->with('status','Program Updated Successfully');
+        return redirect()->back()->with('status','Program Added Successfully');
     }
     public function update(Request $request)
     {

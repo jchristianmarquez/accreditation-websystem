@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ApprovalTypes;
 use App\Models\Area;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -13,9 +12,11 @@ class AreaController extends Controller
 {
     public function index(){
 
+        $areas = Area::join('publish_statuses','publish_statuses.publishID','=', 'areas.publishStatus')
+                            ->get();
+
         return view('admin/areas',[
-            'areas'=>  Area::all(),
-            'approvalTypes'=> ApprovalTypes::all()
+            'areas'=>  $areas
         ]);
     }
 
@@ -53,11 +54,10 @@ class AreaController extends Controller
     }
     public function update(Request $request)
     {
-        Area::where('shortname', $request->shortname)
+        Area::where('areaNumber', $request->areaNumber)
             ->update([
-                'shortname' => $request->shortname,
-                'longname' => $request->longname,
-                'description' => $request->description
+                'areaNumber' => $request->areaNumber,
+                'areaName' => $request->areaName,
             ]);
 
         return redirect()->back()->with('status','Area Updated Successfully');
@@ -65,7 +65,7 @@ class AreaController extends Controller
 
     public function destroy(Request $request)
     {
-        Area::where('shortname', $request->shortname)->delete();
+        Area::where('areaNumber', $request->areaNumber)->delete();
 
         return redirect()->back()->with('status','Area Deleted Successfully');
     }

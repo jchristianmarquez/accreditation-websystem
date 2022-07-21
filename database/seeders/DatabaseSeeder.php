@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call(AccreditationLevelSeeder::class);
         $this->call(DepartmentSeeder::class);
         $this->call(ProgramSeeder::class);
+        $this->call(AreaSeeder::class);
 
     }
 }

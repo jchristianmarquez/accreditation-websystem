@@ -17,9 +17,13 @@ class CreateTableInfosTable extends Migration
             $table->id();
 
             $table->smallInteger('accred_level');
-            $table->string('course');
+            $table->string('program');
             $table->smallInteger('area');
             $table->string('reportType');
+
+            $table->smallInteger('tblRow');
+            $table->smallInteger('tblCol');
+            $table->string('cellText');
 
             $table->smallInteger('approvalType')->foreign();
             $table->smallInteger('approvalDirector')->foreign();
@@ -31,8 +35,9 @@ class CreateTableInfosTable extends Migration
                 ->on('accreditation_levels')
                 ->onDelete('cascade');
 
-            //Course Foreign Key
-            $table->foreign('course')
+
+            //Program Foreign Key
+            $table->foreign('program')
                 ->references('shortname')
                 ->on('department')
                 ->onDelete('cascade');
@@ -68,6 +73,8 @@ class CreateTableInfosTable extends Migration
                 ->onDelete('cascade');
 
             $table->timestamps();
+
+            $table->unique(array('program','area','reportType','tblRow','tblCol'));
         });
     }
 

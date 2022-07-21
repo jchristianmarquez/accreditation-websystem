@@ -1,10 +1,13 @@
 <?php
 
+use App\Http\Controllers\AccountSettingsController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\AreaController;
+use App\Http\Controllers\TemplateController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SelectProgramController;
+use App\Http\Controllers\TableInfoController;
 use App\Models\Department;
 
 /*
@@ -43,6 +46,14 @@ Route::controller(DepartmentController::class)->group(function(){
 
 });
 
+Route::controller(AccountSettingsController::class)->group(function(){
+
+    Route::get('account-settings','index');
+
+    Route::post('update-account', 'update');
+
+});
+
 Route::controller(ProgramController::class)->group(function(){
 
     Route::post('add-program','store');
@@ -60,10 +71,33 @@ Route::controller(AreaController::class)->group(function(){
 
     Route::get('areas','index');
 
-    // Route::post('update-program', 'update');
+    Route::post('update-area', 'update');
 
-    // Route::post('delete-program', 'destroy');
+    Route::post('delete-area', 'destroy');
 });
+
+Route::controller(TemplateController::class)->group(function(){
+
+    Route::post('add-columnn','store');
+
+    Route::get('templates/{area}/{reportType}','index');
+
+    Route::post('update-column', 'update');
+
+    Route::post('delete-column', 'destroy');
+});
+
+Route::controller(TableInfoController::class)->group(function(){
+
+    // Route::post('add-columnn','store');
+
+    Route::get('table_info/{program}/{area}/{reportType}','index');
+
+    // Route::post('update-column', 'update');
+
+    // Route::post('delete-column', 'destroy');
+});
+
 
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {

@@ -11,7 +11,6 @@ class Template extends Model
 
     protected $fillable = [
         'accred_level',
-        'course',
         'area',
         'reportType',
         'columnNumber',

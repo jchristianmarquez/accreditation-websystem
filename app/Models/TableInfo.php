@@ -11,12 +11,16 @@ class TableInfo extends Model
 
     protected $fillable = [
         'accred_level',
-        'course',
+        'program',
         'area',
         'reportType',
         'tblRow',
         'tblCol',
         'cellText',
+        'approvalType',
+        'approvalDirector',
+        'approvalQA'
+
     ];
 
     protected $table = 'table_infos';
