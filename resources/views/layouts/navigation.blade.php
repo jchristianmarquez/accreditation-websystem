@@ -10,6 +10,8 @@
                 <li class="short"><a href="/programs">Programs</a></li><br>
                 <li class="short"><a href="/areas">Areas</a></li><br>
                 <li class="short"><a href="/templates/1/compliance">Templates</a></li><br>
+                <li class="short"><a href="/file-manager">File Manager</a></li><br>
+                <li class="short"><a href="/comments/1/compliance">Comments</a></li><br>
             </ul>
         </li>
         <li><a href="#">Area<i class="fa-solid fa-chevron-down"></i></a>
@@ -19,7 +21,7 @@
                 @endforeach
             </ul>
         </li>
-        <li><a href="#">User Setting</a></li>
+        <li><a href="{{ url('/user-setting') }}">User Setting</a></li>
         <li><a href="{{ url('/account-settings') }}">Account Setting<i class="fa-solid fa-chevron-down"></i></a>
             <ul>
                 <li class="short">

@@ -5,19 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TableInformation extends Model
+class Publish extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'accred_level',
-        'course',
+        'program',
         'area',
         'reportType',
         'tblRow',
-        'tblCol',
-        'cellText',
+        'comment',
+        'edited_by',
+        'approval'
     ];
 
-    protected $table = 'table_info';
+    protected $table = 'publishes';
 }

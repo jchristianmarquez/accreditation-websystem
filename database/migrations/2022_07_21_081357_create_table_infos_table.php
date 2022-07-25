@@ -25,21 +25,16 @@ class CreateTableInfosTable extends Migration
             $table->smallInteger('tblCol');
             $table->string('cellText');
 
-            $table->smallInteger('approvalType')->foreign();
-            $table->smallInteger('approvalDirector')->foreign();
-            $table->smallInteger('approvalQA')->foreign();
-
             // Accreditation Level Foreign Key
             $table->foreign('accred_level')
                 ->references('accreditationLevel')
                 ->on('accreditation_levels')
                 ->onDelete('cascade');
 
-
             //Program Foreign Key
             $table->foreign('program')
                 ->references('shortname')
-                ->on('department')
+                ->on('programs')
                 ->onDelete('cascade');
 
             //Area Level Foreign Key
@@ -52,24 +47,6 @@ class CreateTableInfosTable extends Migration
             $table->foreign('reportType')
                 ->references('reportType')
                 ->on('reports')
-                ->onDelete('cascade');
-
-            //Approval Type Foreign Key
-            $table->foreign('approvalType')
-            ->references('approvalID')
-            ->on('approval_types')
-            ->onDelete('cascade');
-
-            //Approval Director Foreign Key
-            $table->foreign('approvalDirector')
-                ->references('approvalStatusID')
-                ->on('approval_statuses')
-                ->onDelete('cascade');
-
-            //Approval QA Foreign Key
-            $table->foreign('approvalQA')
-                ->references('approvalStatusID')
-                ->on('approval_statuses')
                 ->onDelete('cascade');
 
             $table->timestamps();

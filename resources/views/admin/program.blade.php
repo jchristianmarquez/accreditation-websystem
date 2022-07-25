@@ -1,5 +1,6 @@
 <x-app-layout>
     <x-table tableType="control-panel" itemLabel="Program">
+        <x-slot name="divName">program-div</x-slot>
         <x-slot name="table_header">
             List of Programs
             <x-slot name="rows">

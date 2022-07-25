@@ -8,7 +8,8 @@ use App\Http\Controllers\TemplateController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SelectProgramController;
 use App\Http\Controllers\TableInfoController;
-use App\Models\Department;
+use App\Http\Controllers\PublishController;
+use App\Http\Controllers\UserSettingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -89,16 +90,40 @@ Route::controller(TemplateController::class)->group(function(){
 
 Route::controller(TableInfoController::class)->group(function(){
 
-    // Route::post('add-columnn','store');
+    Route::post('add-row','store');
 
     Route::get('table_info/{program}/{area}/{reportType}','index');
 
-    // Route::post('update-column', 'update');
+    Route::post('update-cell', 'update');
 
-    // Route::post('delete-column', 'destroy');
+    Route::post('delete-row', 'destroy');
 });
 
+Route::controller(PublishController::class)->group(function(){
 
+    Route::post('add-comment','store');
+
+    Route::get('comments/{area}/{report}','index');
+
+    // Route::post('update-cell', 'update');
+
+    Route::post('delete-comment', 'destroy');
+});
+
+Route::controller(UserSettingController::class)->group(function(){
+
+    Route::post('add-user','store');
+
+    Route::get('user-setting','index');
+
+    Route::post('update-user', 'update');
+
+    Route::post('delete-user', 'destroy');
+});
+
+Route::get('/file-manager', function () {
+    return view('admin/file-manager');
+})->name('file-manager');
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();

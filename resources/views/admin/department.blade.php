@@ -1,5 +1,6 @@
 <x-app-layout>
     <x-table tableType="control-panel" itemLabel="Department">
+        <x-slot name="divName">department-div</x-slot>
         <x-slot name="table_header">
             List of Departments
             <x-slot name="rows">
@@ -86,6 +87,7 @@
 
     {{-- DELETE MODAL --}}
     <x-modal-type id="deleteModal">
+        <x-slot name="divName">department-div</x-slot>
         <x-slot name="modal_heading">
             Delete Department
         </x-slot>

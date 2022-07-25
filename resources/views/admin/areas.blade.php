@@ -1,5 +1,6 @@
 <x-app-layout>
     <x-table tableType="area-manager" itemLabel="Area">
+        <x-slot name="divName">area-div</x-slot>
         <x-slot name="table_header">
             List of Areas
             <x-slot name="rows">

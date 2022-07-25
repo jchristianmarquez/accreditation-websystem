@@ -1,8 +1,23 @@
 <x-app-layout>
-    <x-table tableType="area-manager template-btn" itemLabel="Column">
+    <x-table tableType="area-manager" itemLabel="Column">
+        <x-slot name="divName">template-div</x-slot>
         <x-slot name="table_header">
             Area Columns
             <x-slot name="rows">
+                <x-category-switch>
+                    <x-slot name="areas">
+                        <option hidden>{{$area}} - {{$listOfAreas->where('areaNumber', $area)->first()->areaName}}</option>
+                        @foreach ($listOfAreas as $areas)
+                            <option value="/templates/{{$areas->areaNumber}}/{{$report}}">{{$areas->areaNumber}} - {{$areas->areaName}}</option>
+                        @endforeach
+                    </x-slot>
+                    <x-slot name="files">
+                        <option hidden>{{$reportTypes->where('reportType', $report)->first()->reportLabel}}</option>
+                        @foreach ($reportTypes as $reportType)
+                            <option value="/templates/{{$area}}/{{$reportType->reportType}}">{{$reportType->reportLabel}}</option>
+                        @endforeach
+                    </x-slot>
+                </x-category-switch>
                 <tr>
                     <th>Column No.</th>
                     <th>Column Name</th>
