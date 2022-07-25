@@ -49,15 +49,16 @@ class PublishController extends Controller
 
     public function destroy(Request $request){
 
-        dd($request);
         $comment= Publish::where([
             'accred_level'=>$request->accred_level,
-            'program'=>$request->program,
             'area'=>$request->area,
             'reportType'=>$request->reportType,
             'tblRow'=>$request->tblRow,
             'comment'=>$request->comment
         ]);
 
+        $comment->delete();
+
+        return redirect()->back()->with('status','Comment Deleted Successfully');
     }
 }

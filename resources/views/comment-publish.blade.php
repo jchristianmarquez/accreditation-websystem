@@ -61,14 +61,13 @@
             All Comments
         </x-slot>
         <div class="addForm">
-            @foreach ($listOfComments->where() as $comment)
+            @foreach ($listOfComments as $comment)
                 <h5 id= 'viewallcomment-title' class="card-title mt-8">Area: {{$comment['area'] }} | Row: {{ $comment['tblRow'] }}</h5>
                 <h6 id= 'viewallcomment-creator' class="card-subtitle">Created By: {{$comment['edited_by'] }}</h6>
                 <span id='viewallcomment-content' class="card-text">{{ $comment['comment'] }}</span>
                 <form method="POST" action="{{ url('delete-comment') }}" id='deleteform'>
                     @csrf
                         <x-read name="accred_level" type="hidden" :value="1" required autofocus />
-                        <x-read id="commentProgram[{{$loop->index}}]" name="program" type="text" :value="old('program')" required autofocus />
                         <x-read name="area" type="hidden" :value="$area" required autofocus />
                         <x-read name="reportType" type="hidden" :value="$report" required autofocus />
                         <x-read name="tblRow" type="hidden" :value="$comment['tblRow']" required autofocus />
@@ -102,7 +101,7 @@
 
                 <!-- Program -->
                 <x-label class="font-weight-bold" for="program" :value="__('Program')" />
-                <x-read class="block mt-1 w-full mb-3" type="text" name="program" :value="old('program')" required autofocus />
+                <x-read id="program" class="block mt-1 w-full mb-3" type="text" name="program" :value="old('program')" required autofocus />
 
                 <!-- Edited By -->
                 <x-label class="font-weight-bold" for="editedBy" :value="__('Edited By')" />
