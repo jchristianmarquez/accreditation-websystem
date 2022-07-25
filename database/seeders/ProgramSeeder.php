@@ -20,9 +20,9 @@ class ProgramSeeder extends Seeder
             ['shortname' => 'BSA','longname' => 'Bachelor of Science in Accountancy', 'department' => 'DBE' , 'description' => 'Employ technology as a business tool in capturing financial and non-financial information, generating reports and making decisions;'],
             ['shortname' => 'AIS','longname' => 'Bachelor of Science in Accounting Information Systems', 'department' => 'DBE' , 'description' => 'Employ technology as a business tool in capturing financial and non-financial information, generating reports and making decisions;'],
             ['shortname' => 'BEE','longname' => 'Bachelor of Elementary Education','department' => 'DTE' , 'description' => 'Demonstrate in-depth understanding of the diversity of learners in various learning areas.'],
-            ['shortname' => 'SEDS','longname' => 'Bachelor of Secondary Education major in Science', 'department' => 'DTE' , 'description' => 'Demonstrate deep understanding of scientific concepts and principles.'],
-            ['shortname' => 'SEDM','longname' => 'Bachelor of Secondary Education major in Mathematics', 'department' => 'DTE' , 'description' => 'Exhibit competence in mathematical concepts and procedures.'],
-            ['shortname' => 'SEDE','longname' => 'Bachelor of Secondary Education major in English', 'department' => 'DTE' , 'description' => 'Possess broad knowledge of language and literature for effective learning.']
+            ['shortname' => 'SEDS','longname' => 'Bachelor of Secondary Education Major in Science', 'department' => 'DTE' , 'description' => 'Demonstrate deep understanding of scientific concepts and principles.'],
+            ['shortname' => 'SEDM','longname' => 'Bachelor of Secondary Education Major in Mathematics', 'department' => 'DTE' , 'description' => 'Exhibit competence in mathematical concepts and procedures.'],
+            ['shortname' => 'SEDE','longname' => 'Bachelor of Secondary Education Major in English', 'department' => 'DTE' , 'description' => 'Possess broad knowledge of language and literature for effective learning.']
         ];
         foreach($programs as $program){
             Program::create($program);

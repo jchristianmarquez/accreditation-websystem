@@ -4,6 +4,6 @@
         <img class="logo-img" src="{{ url('/images/official-CCC-logo.png') }}">
     <h1 class="site-header">Accreditation System</h1>
     </div>
-    <a href="">Hello, Admin!</a>
+    <a id="userName" href="">Hello, {{ Auth::user()->name }}</a>
 </div>
 <!-- header ends here-->

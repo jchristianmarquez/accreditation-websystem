@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class SelectProgramController extends Controller
 {
     public function index($selected_dept){
-        $departmen_info = DB::table('department')
+        $department_info = DB::table('department')
             ->where('shortname', $selected_dept)->get();
 
         $programs = DB::table('programs')
@@ -18,7 +18,7 @@ class SelectProgramController extends Controller
         $reportTypes = Report::all();
 
         return view('admin/program_select',[
-            'department'=>  $departmen_info,
+            'department'=>  $department_info,
             'programs'=>  $programs,
             'reportTypes'=>  $reportTypes
         ]);

@@ -9,11 +9,11 @@ class Area extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'item',
-        'description',
-        'evidence',
-        'tag'
+        'areaNumber',
+        'areaName',
+        'publishStatus'
+
     ];
 
-    protected $table = 'Area';
+    protected $table = 'areas';
 }

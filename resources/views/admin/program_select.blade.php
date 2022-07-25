@@ -16,7 +16,7 @@
                     <p>{{$program->longname}}</p>
                     @foreach ($reportTypes as $report)
                         <x-report-types type="{{$department[0]->shortname}}">
-                            <x-slot name="link">/1/BSCS/1/{{$report->reportType}}</x-slot>
+                            <x-slot name="link">/table_info/{{$program->shortname}}/1/{{$report->reportType}}</x-slot>
                             {{$report->reportLabel}}
                         </x-report-types>
                     @endforeach

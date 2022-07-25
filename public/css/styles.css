@@ -4,10 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condesed', sans-serif;
 }
 
-/*Header starts here */
+/*#region Header starts here*/
 .accred-header {
     background-color: #043E9F;
     height: 85px;
@@ -25,7 +25,6 @@
     height: 65px;
     width: 65px;
 }
-
 .accred-header h1 ,.accred-header a{
     font-size: 32px;
     margin: auto;
@@ -33,10 +32,9 @@
     letter-spacing: 1.2px;
     color: #fff;
 }
-
 .accred-header .site-header{
     margin-left: 95px;
-    margin-top: 5px;
+    vertical-align: auto;
 }
 .accred-header a {
     text-decoration: none;
@@ -47,7 +45,7 @@
 /*Responsive Text Size starts here */
 @media screen and (min-width: 861px) {
     .accred-header h1 ,.accred-header a {
-      font-size: 32px;
+      font-size: 24px;
     }
 }
 @media screen and (max-width: 860px) {
@@ -60,12 +58,9 @@
     }
 }
 /*Responsive Text Size ends here */
+/*#endregion Header ends here*/
 
-
-/*Header ends here */
-
-
-/*Accreditation Navigation Bar starts here */
+/*#region Accreditation Navigation Bar starts here */
 nav {
     background-color: #023FD8;
 }
@@ -85,8 +80,8 @@ nav ul {
 
 nav ul li {
     float: left;
+    margin-right: 2px;
     display: inline-block;
-    margin: 0 5px;
     background-color: #023FD8;
 }
 
@@ -128,6 +123,7 @@ nav ul li:hover > ul {
     top: 50px;
     opacity: 1;
     visibility: visible;
+
 }
 
 nav ul ul li {
@@ -144,1203 +140,9 @@ nav ul ul li {
 nav ul ul li a {
     line-height: 60px;
 }
-/*Accreditation Navigation Bar ends here */
+/*#endregion Accreditation Navigation Bar ends here */
 
-
-/*Header and horizontal tag starts here*/
-.area-status-header .status-header {
-    margin-top: 6%;
-    margin-left: 9%;
-}
-
-.area-status-header .view-all-comments {
-    float: right;
-    font-weight: bold;
-    margin-top: -1.5%;
-    margin-right: 10%;
-}
-
-.area-status-header .view-all-comments i {
-    color: #043E9F;
-    font-size: 20px;
-}
-
-.area-status-header .view-all-comments a {
-    text-decoration: none;
-    color: #000;
-    margin-left: 5px;
-    font-size: 20px;
-}
-
-.area-status-header hr.area-status-hr {
-    margin-top: 0.5%;
-    width: 81%;
-    margin-left: 9%;
-    height: 8px;
-    border-radius: 50px;
-    border: none;
-    background-color: #043E9F;
-}
-
-
-.dept-header .program-header {
-    margin-top: 6%;
-    margin-left: 9%;
-}
-
-.dept-header hr.program-hr {
-    margin-top: 0.5%;
-    width: 81%;
-    margin-left: 9%;
-    height: 8px;
-    border-radius: 50px;
-    border: none;
-    background-color: #043E9F;
-}
-/*Header and horizontal tag ends here*/
-
-
-/*Table content starts here */
-.table-container {
-    padding: 0 10%;
-    margin-left: -15px;
-    margin-top: 20px;
-}
-
-.table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.table thead {
-   background-color: #043E9F;
-}
-
-.table thead tr th {
-    font-size: 17px;
-    font-weight: bolder;
-    color: #fff;
-    letter-spacing: 0.35px;
-    opacity: 1;
-    padding: 12px;
-    vertical-align: top;
-    border: 3px solid #fff;
-    letter-spacing: 1px;
-}
-
-.table tbody tr td {
-    font-size: 16px;
-    letter-spacing: 0.35px;
-    color: #000;
-    padding: 8px;
-    text-align: center;
-    border-right: 3px solid #fff;
-    font-weight: bold;
-    border-bottom: 1px solid #E6E6E6;
-}
-
-.table tbody tr td a {
-    text-decoration: none;
-    color: #043E9F;
-}
-
-.table tbody tr td i {
-    color: #043E9F;
-    padding-right: 5px;
-    cursor: pointer;
-}
-
-.table tbody .button {
-    text-decoration: none;
-    outline: none;
-    border: none;
-    margin-right: 15px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.table tbody tr td:nth-of-type(2) {
-    text-align: left;
-}
-
-.table tbody tr td:nth-of-type(3) {
-    text-align: left;
-}
-
-.table tbody tr td:nth-of-type(4) {
-    text-align: center;
-}
-
-/*Toggle Button Starts here */
-.toggle-button input[type=checkbox].toggle{
-    display: none;
-}
-
-.toggle-button input[type=checkbox].toggle + label {
-    display: inline-block;
-    height: 30px;
-    width: 130px;
-    position: relative;
-    font-size: 15px;
-    border: 1px solid #F50000;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.toggle-button input[type=checkbox].toggle + label:before {
-    position: absolute;
-    top: 3px;
-    height: 22px;
-    width: 22px;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 3;
-}
-
-.toggle-button input[type=checkbox].toggle + label:after {
-  width: 90px;
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.toggle-button input[type=checkbox].toggle + label.rounded {
-    border-radius: 30px;
-}
-
-.toggle-button input[type=checkbox].toggle + label.rounded:before {
-    border-radius: 50%;
-}
-
-.toggle-button input[type=checkbox].toggle:not(:checked) + label {
-    background-color: transparent;
-    text-align: right;
-}
-
-.toggle-button input[type=checkbox].toggle:not(:checked) + label:after {
-    content: attr(data-unchecked);
-    right: 10px; /**/
-    left: auto;
-    opacity: 1;
-    color: #F50000;
-}
-
-.toggle-button input[type=checkbox].toggle:not(:checked) + label:before {
-    left: 4px;
-    background-color: #F50000;
-}
-
-.toggle-button input[type=checkbox].toggle:checked + label {
-    text-align: left;
-    border-color: #196906;
-}
-
-.toggle-button input[type=checkbox].toggle:checked + label:after {
-    content: attr(data-checked);
-    left: 4px;
-    right: auto;
-    opacity: 1;
-    color: #196906;
-}
-
-.toggle-button input[type=checkbox].toggle:checked + label:before {
-    left: 102px;
-    background-color: #196906;
-}
-
-/***********************************************/
-.toggle-button-two input[type=checkbox].toggle-two{
-    display: none;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two + label {
-    display: inline-block;
-    height: 30px;
-    width: 130px;
-    position: relative;
-    font-size: 15px;
-    border: 1px solid #F50000;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two + label:before {
-    position: absolute;
-    top: 3px;
-    height: 22px;
-    width: 22px;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 3;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two + label:after {
-  width: 90px;
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two + label.rounded-two {
-    border-radius: 30px;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two + label.rounded-two:before {
-    border-radius: 50%;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two:not(:checked) + label {
-    background-color: transparent;
-    text-align: right;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two:not(:checked) + label:after {
-    content: attr(data-unchecked);
-    right: 10px; /**/
-    left: auto;
-    opacity: 1;
-    color: #F50000;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two:not(:checked) + label:before {
-    left: 4px;
-    background-color: #F50000;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two:checked + label {
-    text-align: left;
-    border-color: #196906;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two:checked + label:after {
-    content: attr(data-checked);
-    left: 4px;
-    right: auto;
-    opacity: 1;
-    color: #196906;
-}
-
-.toggle-button-two input[type=checkbox].toggle-two:checked + label:before {
-    left: 102px;
-    background-color: #196906;
-}
-/***********************************************/
-
-.toggle-button-three input[type=checkbox].toggle-three{
-    display: none;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three + label {
-    display: inline-block;
-    height: 30px;
-    width: 130px;
-    position: relative;
-    font-size: 15px;
-    border: 1px solid #F50000;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three + label:before {
-    position: absolute;
-    top: 3px;
-    height: 22px;
-    width: 22px;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 3;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three + label:after {
-  width: 90px;
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three + label.rounded-three {
-    border-radius: 30px;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three + label.rounded-three:before {
-    border-radius: 50%;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three:not(:checked) + label {
-    background-color: transparent;
-    text-align: right;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three:not(:checked) + label:after {
-    content: attr(data-unchecked);
-    right: 10px; /**/
-    left: auto;
-    opacity: 1;
-    color: #F50000;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three:not(:checked) + label:before {
-    left: 4px;
-    background-color: #F50000;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three:checked + label {
-    text-align: left;
-    border-color: #196906;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three:checked + label:after {
-    content: attr(data-checked);
-    left: 4px;
-    right: auto;
-    opacity: 1;
-    color: #196906;
-}
-
-.toggle-button-three input[type=checkbox].toggle-three:checked + label:before {
-    left: 102px;
-    background-color: #196906;
-}
-
-
-/***********************************************/
-
-.toggle-button-four input[type=checkbox].toggle-four{
-    display: none;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four + label {
-    display: inline-block;
-    height: 30px;
-    width: 130px;
-    position: relative;
-    font-size: 15px;
-    border: 1px solid #F50000;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four + label:before {
-    position: absolute;
-    top: 3px;
-    height: 22px;
-    width: 22px;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 3;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four + label:after {
-  width: 90px;
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four + label.rounded-four {
-    border-radius: 30px;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four + label.rounded-four:before {
-    border-radius: 50%;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four:not(:checked) + label {
-    background-color: transparent;
-    text-align: right;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four:not(:checked) + label:after {
-    content: attr(data-unchecked);
-    right: 10px; /**/
-    left: auto;
-    opacity: 1;
-    color: #F50000;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four:not(:checked) + label:before {
-    left: 4px;
-    background-color: #F50000;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four:checked + label {
-    text-align: left;
-    border-color: #196906;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four:checked + label:after {
-    content: attr(data-checked);
-    left: 4px;
-    right: auto;
-    opacity: 1;
-    color: #196906;
-}
-
-.toggle-button-four input[type=checkbox].toggle-four:checked + label:before {
-    left: 102px;
-    background-color: #196906;
-}
-
-/***********************************************/
-
-.toggle-button-five input[type=checkbox].toggle-five{
-    display: none;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five + label {
-    display: inline-block;
-    height: 30px;
-    width: 130px;
-    position: relative;
-    font-size: 15px;
-    border: 1px solid #F50000;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five + label:before {
-    position: absolute;
-    top: 3px;
-    height: 22px;
-    width: 22px;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 3;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five + label:after {
-  width: 90px;
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five + label.rounded-five {
-    border-radius: 30px;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five + label.rounded-five:before {
-    border-radius: 50%;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five:not(:checked) + label {
-    background-color: transparent;
-    text-align: right;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five:not(:checked) + label:after {
-    content: attr(data-unchecked);
-    right: 10px; /**/
-    left: auto;
-    opacity: 1;
-    color: #F50000;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five:not(:checked) + label:before {
-    left: 4px;
-    background-color: #F50000;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five:checked + label {
-    text-align: left;
-    border-color: #196906;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five:checked + label:after {
-    content: attr(data-checked);
-    left: 4px;
-    right: auto;
-    opacity: 1;
-    color: #196906;
-}
-
-.toggle-button-five input[type=checkbox].toggle-five:checked + label:before {
-    left: 102px;
-    background-color: #196906;
-}
-
-/***********************************************/
-
-.toggle-button-six input[type=checkbox].toggle-six{
-    display: none;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six + label {
-    display: inline-block;
-    height: 30px;
-    width: 130px;
-    position: relative;
-    font-size: 15px;
-    border: 1px solid #F50000;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six + label:before {
-    position: absolute;
-    top: 3px;
-    height: 22px;
-    width: 22px;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 3;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six + label:after {
-  width: 90px;
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six + label.rounded-six {
-    border-radius: 30px;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six + label.rounded-six:before {
-    border-radius: 50%;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six:not(:checked) + label {
-    background-color: transparent;
-    text-align: right;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six:not(:checked) + label:after {
-    content: attr(data-unchecked);
-    right: 10px; /**/
-    left: auto;
-    opacity: 1;
-    color: #F50000;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six:not(:checked) + label:before {
-    left: 4px;
-    background-color: #F50000;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six:checked + label {
-    text-align: left;
-    border-color: #196906;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six:checked + label:after {
-    content: attr(data-checked);
-    left: 4px;
-    right: auto;
-    opacity: 1;
-    color: #196906;
-}
-
-.toggle-button-six input[type=checkbox].toggle-six:checked + label:before {
-    left: 102px;
-    background-color: #196906;
-}
-
-/***********************************************/
-
-.toggle-button-seven input[type=checkbox].toggle-seven{
-    display: none;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven + label {
-    display: inline-block;
-    height: 30px;
-    width: 130px;
-    position: relative;
-    font-size: 15px;
-    border: 1px solid #F50000;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven + label:before {
-    position: absolute;
-    top: 3px;
-    height: 22px;
-    width: 22px;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 3;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven + label:after {
-  width: 90px;
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven + label.rounded-seven {
-    border-radius: 30px;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven + label.rounded-seven:before {
-    border-radius: 50%;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven:not(:checked) + label {
-    background-color: transparent;
-    text-align: right;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven:not(:checked) + label:after {
-    content: attr(data-unchecked);
-    right: 10px; /**/
-    left: auto;
-    opacity: 1;
-    color: #F50000;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven:not(:checked) + label:before {
-    left: 4px;
-    background-color: #F50000;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven:checked + label {
-    text-align: left;
-    border-color: #196906;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven:checked + label:after {
-    content: attr(data-checked);
-    left: 4px;
-    right: auto;
-    opacity: 1;
-    color: #196906;
-}
-
-.toggle-button-seven input[type=checkbox].toggle-seven:checked + label:before {
-    left: 102px;
-    background-color: #196906;
-}
-
-/***********************************************/
-
-.toggle-button-eight input[type=checkbox].toggle-eight {
-    display: none;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight + label {
-    display: inline-block;
-    height: 30px;
-    width: 130px;
-    position: relative;
-    font-size: 15px;
-    border: 1px solid #F50000;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight + label:before {
-    position: absolute;
-    top: 3px;
-    height: 22px;
-    width: 22px;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 3;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight + label:after {
-  width: 90px;
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight + label.rounded-eight {
-    border-radius: 30px;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight + label.rounded-eight:before {
-    border-radius: 50%;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight:not(:checked) + label {
-    background-color: transparent;
-    text-align: right;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight:not(:checked) + label:after {
-    content: attr(data-unchecked);
-    right: 10px; /**/
-    left: auto;
-    opacity: 1;
-    color: #F50000;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight:not(:checked) + label:before {
-    left: 4px;
-    background-color: #F50000;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight:checked + label {
-    text-align: left;
-    border-color: #196906;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight:checked + label:after {
-    content: attr(data-checked);
-    left: 4px;
-    right: auto;
-    opacity: 1;
-    color: #196906;
-}
-
-.toggle-button-eight input[type=checkbox].toggle-eight:checked + label:before {
-    left: 102px;
-    background-color: #196906;
-}
-
-/***********************************************/
-
-.toggle-button-nine input[type=checkbox].toggle-nine {
-    display: none;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine + label {
-    display: inline-block;
-    height: 30px;
-    width: 130px;
-    position: relative;
-    font-size: 15px;
-    border: 1px solid #F50000;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine + label:before {
-    position: absolute;
-    top: 3px;
-    height: 22px;
-    width: 22px;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 3;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine + label:after {
-  width: 90px;
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine + label.rounded-nine {
-    border-radius: 30px;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine + label.rounded-nine:before {
-    border-radius: 50%;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine:not(:checked) + label {
-    background-color: transparent;
-    text-align: right;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine:not(:checked) + label:after {
-    content: attr(data-unchecked);
-    right: 10px; /**/
-    left: auto;
-    opacity: 1;
-    color: #F50000;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine:not(:checked) + label:before {
-    left: 4px;
-    background-color: #F50000;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine:checked + label {
-    text-align: left;
-    border-color: #196906;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine:checked + label:after {
-    content: attr(data-checked);
-    left: 4px;
-    right: auto;
-    opacity: 1;
-    color: #196906;
-}
-
-.toggle-button-nine input[type=checkbox].toggle-nine:checked + label:before {
-    left: 102px;
-    background-color: #196906;
-}
-
-
-/***********************************************/
-
-.toggle-button-ten input[type=checkbox].toggle-ten {
-    display: none;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten + label {
-    display: inline-block;
-    height: 30px;
-    width: 130px;
-    position: relative;
-    font-size: 15px;
-    border: 1px solid #F50000;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten + label:before {
-    position: absolute;
-    top: 3px;
-    height: 22px;
-    width: 22px;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 3;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten + label:after {
-  width: 90px;
-  text-align: center;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten + label.rounded-ten {
-    border-radius: 30px;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten + label.rounded-ten:before {
-    border-radius: 50%;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten:not(:checked) + label {
-    background-color: transparent;
-    text-align: right;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten:not(:checked) + label:after {
-    content: attr(data-unchecked);
-    right: 10px; /**/
-    left: auto;
-    opacity: 1;
-    color: #F50000;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten:not(:checked) + label:before {
-    left: 4px;
-    background-color: #F50000;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten:checked + label {
-    text-align: left;
-    border-color: #196906;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten:checked + label:after {
-    content: attr(data-checked);
-    left: 4px;
-    right: auto;
-    opacity: 1;
-    color: #196906;
-}
-
-.toggle-button-ten input[type=checkbox].toggle-ten:checked + label:before {
-    left: 102px;
-    background-color: #196906;
-}
-
-/*Toggle Button ends here */
-
-.select-choices {
-    padding: 8px 12px;
-    outline: none;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.select-choices option {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    border: none;
-}
-
-.select-choices-two {
-    padding: 8px 12px;
-    outline: none;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.select-choices-two option {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    border: none;
-}
-
-.select-choices-three {
-    padding: 8px 12px;
-    outline: none;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.select-choices-three option {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    border: none;
-}
-
-.select-choices-four {
-    padding: 8px 12px;
-    outline: none;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.select-choices-four option {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    border: none;
-}
-
-.select-choices-five {
-    padding: 8px 12px;
-    outline: none;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.select-choices-five option {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    border: none;
-}
-
-.select-choices-six {
-    padding: 8px 12px;
-    outline: none;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.select-choices-six option {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    border: none;
-}
-
-.select-choices-seven {
-    padding: 8px 12px;
-    outline: none;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.select-choices-seven option {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    border: none;
-}
-
-.select-choices-eight {
-    padding: 8px 12px;
-    outline: none;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.select-choices-eight option {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    border: none;
-}
-
-.select-choices-nine {
-    padding: 8px 12px;
-    outline: none;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.select-choices-nine option {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    border: none;
-}
-
-.select-choices-ten {
-    padding: 8px 12px;
-    outline: none;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.select-choices-ten option {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    border: none;
-}
-
-
-
-/*Table content ends here */
-
-
-/*Responsiveness starts here */
-@media (max-width: 768px) {
-    .table thead {
-        display: none;
-    }
-
-    .table, .table tbody,.table tr,.table td {
-        display: block;
-        width: 100%;
-    }
-
-    .table tr {
-        margin-bottom: 15px;
-    }
-
-    .table tbody tr td {
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-    }
-
-    .table td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        width: 50%;
-        padding-left: 15px;
-        font-weight: bold;
-        font-size: 17px;
-        text-align: left;
-    }
-
-    .table tbody tr td:nth-of-type(2) {
-        text-align: right;
-    }
-
-    .table tbody tr td:nth-of-type(3) {
-        text-align: right;
-    }
-
-    .table tbody tr td:nth-of-type(4) {
-        text-align: right;
-    }
-
-    .area-status-header .view-all-comments {
-        float: left;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        margin-left: 9%;
-    }
-
-    .accred-header .logo-img span h1{
-        margin-left: 20%;
-        position: relative;
-    }
-
-    .accred-header .header-two a h1 {
-      font-size: 21.7px;
-    }
-}
-/*Responsiveness ends here */
-
-/*Footer starts here */
+/*#region Footer starts here */
 footer {
     background-color: #043E9F;
     padding: 50px 20px;
@@ -1410,6 +212,9 @@ footer .footer-content li i {
 }
 
 @media (max-width: 768px) {
+    .footer-container {
+        align-items: center;
+    }
     footer .accred-ftr {
         flex-basis: 80%;
         margin: 0 auto;
@@ -1438,133 +243,685 @@ footer .footer-content li i {
         margin-left: 12px;
     }
 }
-/*Footer ends here */
+/*#endregion Footer ends here */
 
-/*Select Program Starts here*/
-    .department-header-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        margin: 50px auto;
-    }
-    .department-heading h2 {
-        font-size: 35px;
-        margin-bottom: 10px;
-        font-weight: bold;
-        color: #023FD8;
-        flex: 1 1 100%;
-    }
+/*#region Account Settings Starts here */
+hr.blueline
+{
+    width: 100%;
+    margin-top: 7%;
+    background-color: #023FD8;
+    border-top: 8px solid #023FD8;
+    border-radius: 5px;
+}
+.main-content
+{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.fields{
+    width:100%;
+    background-color: #ECF0F1;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: #000;
+    font-weight: 600;
+}
+.field-label{
+    font-size: 16px;
+}
+.content-title
+{
+    font-size: 32px;;
+    font-weight: 700;
+    margin-top: 3%;
+}
+.content-subtitle{
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.btnSubmit{
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding:9px 15px;
+    background-color:#043E9F;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+.btncancel{
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+.actionbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.newpass{
+    width:48%;
+    background-color: #ECF0F1;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: #000;
+    font-weight: 600;
+}
+.options{
+  font-size: 16px;
+  font-weight: 500;
+}
+/*#endregion Account Settings Ends here */
 
+/*#region Select Program Starts here*/
+.department-header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+}
+.department-heading h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #023FD8;
+    flex: 1 1 100%;
+}
+
+.department-heading p {
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: #023FD8;
+    width: 50%;
+}
+@media screen and (min-width: 861px) {
     .department-heading p {
-        font-size: 25px;
-        margin-bottom: 50px;
-        color: #023FD8;
         width: 50%;
     }
-    @media screen and (min-width: 861px) {
-        .department-heading p {
-            width: 50%;
-        }
+}
+@media screen and (max-width: 860px) {
+    .department-heading p {
+        width: 80%;
     }
-    @media screen and (max-width: 860px) {
-        .department-heading p {
-            width: 80%;
-        }
+}
+.department-card-container{
+    width: 90%;
+    margin: 50px auto;
+}
+.department-card {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  }
+.department-heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.department-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+    flex-flow: wrap;
+}
+.multi-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.department-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.card-header img {
+    width: 250px;
+}
+.card-body {
+    width: 250px;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #023FD8;
+}
+.card-body p {
+    min-height: 4.2em;
+    line-height: 1.4em;
+}
+
+.card-body .report-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 17px;
+    border-radius: 50px;
+}
+.card-body .dci-btn {
+    border: 1px solid #666666;
+    color:#666666;
+}
+.card-body .dbe-btn {
+    border: 1px solid #EF1833;
+    color:#EF1833;
+}
+.card-body .dte-btn {
+    border: 1px solid #49983C;
+    color:#49983C;
+}
+.card-body .dci-btn:hover {
+    color: #fff;
+    background-color: #666666;
+}
+
+.card-body .dbe-btn:hover {
+    color: #fff;
+    background-color: #EF1833;
+}
+
+.card-body .dte-btn:hover {
+    color: #fff;
+    background-color: #49983C;
+}
+
+/*#endregion Select Program ends here*/
+
+/*#region Table Design Starts here*/
+
+/*Table Header and Horizontal Line Starts here*/
+.general-header {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.general-header h2{
+    font-weight: 700;
+    font-size: 32px;
+    margin-left: 80px;
+}
+.line-divider{
+    margin-top: 115px;
+    background-color: #023FD8;
+    height: 12px;
+    width: 90%;
+    margin: auto;
+    border-radius: 7px 7px 7px 7px;
+}
+/*Table Header and Horizontal Line Ends here*/
+
+/*Table content starts here */
+.table-container {
+    width: 90%;
+    margin: auto;
+    margin-top: -8px;
+    padding: 0 3%;
+    padding-top: 25px;
+    min-height: 400px;
+    box-shadow: 0px 4px 7px #D3D3D3;
+    padding-bottom: 30px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead {
+    background-color: #043E9F;
+}
+
+.table thead tr th {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.35px;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 3px solid #fff;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+.table tbody tr td {
+    font-size: 16px;
+    background-color: #E8E8E8;
+    letter-spacing: 0.35px;
+    color: #000;
+    padding: 8px;
+    text-align: center;
+    border: 3px solid #fff;
+    font-weight: 400;
+    border-bottom: 1.5px solid #E6E6E6;
+    vertical-align: middle;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+thead tr th:first-child,
+tbody tr td:first-child {
+  width: 10%;
+  text-align: center;
+}
+
+/*Control Panel Content Table Design Starts Here*/
+.control-panel thead tr th:nth-of-type(2),
+.control-panel tbody tr td:nth-of-type(2) {
+  width: 30%;
+}
+.control-panel thead tr th:nth-of-type(3),
+.control-panel tbody tr td:nth-of-type(3) {
+  width: 45%;
+}
+.control-panel thead tr th:nth-of-type(4),
+.control-panel tbody tr td:nth-of-type(4) {
+  width: 15%;
+  vertical-align: middle;
+}
+.control-panel tbody tr td:nth-of-type(3) {
+    text-align: left;
+}
+/*Control Panel Content Table Design Ends Here*/
+
+/*Area Manager width start*/
+.area-manager thead tr th:nth-of-type(2),
+.area-manager tbody tr td:nth-of-type(2) {
+  width: 45%;
+}
+.area-manager thead tr th:nth-of-type(3),
+.area-manager tbody tr td:nth-of-type(3) {
+  width: 25%;
+  font-weight: 600;
+  text-align: center;
+}
+.area-manager thead tr th:nth-of-type(4),
+.area-manager tbody tr td:nth-of-type(4) {
+  width: 20%;
+}
+
+.Unpublished{
+    color: red;
+}
+.Published{
+    color: green;
+}
+/*Area Manager width end*/
+
+/*User Setting width start*/
+
+.user-setting thead tr th:first-child,
+.user-setting tbody tr td:first-child {
+    display: none;
+}
+.user-setting thead tr th,
+.user-setting tbody tr td {
+  text-align: center;
+}
+
+.user-setting thead tr th:nth-of-type(2),
+.user-setting tbody tr td:nth-of-type(2) {
+  width: 20%;
+}
+.user-setting thead tr th:nth-of-type(3),
+.user-setting tbody tr td:nth-of-type(3) {
+  width: 15%;
+}
+.user-setting thead tr th:nth-of-type(4),
+.user-setting tbody tr td:nth-of-type(4) {
+  width: 15%;
+}
+.user-setting thead tr th:nth-of-type(5),
+.user-setting tbody tr td:nth-of-type(5) {
+  width: 20%;
+}
+.user-setting thead tr th:nth-of-type(6),
+.user-setting tbody tr td:nth-of-type(6) {
+  width: 15%;
+}
+
+.Unpublished{
+    color: red;
+}
+.Published{
+    color: green;
+}
+/*User Setting width end*/
+
+/*Table Information widths start*/
+.table-information {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.table-information tbody tr th:not(:first-child),
+.table-information tbody tr td:not(:first-child),
+.table-information tbody tr th:not(:last-child),
+.table-information tbody tr td:not(:last-child) {
+    min-width: 22%;
+    max-width: 33%;
+}
+
+.table-information tbody tr td:not(:first-child),
+.table-information tbody tr td:not(:last-child) {
+    text-align: left;
+}
+.table-information tbody tr th:first-child,
+.table-information tbody tr td:first-child,
+.table-information tbody tr th:last-child,
+.table-information tbody tr td:last-child {
+    text-align: center;
+    width: 10%;
+}
+.table-information .action-btn {
+    width: 100%;
+}
+.cellEdit {
+    cursor: cell;
+}
+/*Table Information widths end*/
+
+/*Comment widths start*/
+.comment-div .add {
+    visibility: hidden;
+}
+
+.comment-table thead tr th,
+.comment-table tbody tr td {
+  text-align: center;
+}
+.comment-table thead tr th:nth-of-type(2),
+.comment-table tbody tr td:nth-of-type(2) {
+  width: 20%;
+}
+.comment-table thead tr th:nth-of-type(3),
+.comment-table tbody tr td:nth-of-type(3) {
+  width: 15%;
+}
+.comment-table thead tr th:nth-of-type(4),
+.comment-table tbody tr td:nth-of-type(4) {
+  width: 25%;
+}
+.comment-table thead tr th:nth-of-type(5),
+.comment-table tbody tr td:nth-of-type(5) {
+  width: 15%;
+}
+.comment-table thead tr th:nth-of-type(6),
+.comment-table tbody tr td:nth-of-type(6) {
+  width: 15%;
+}
+
+.addForm h5 {
+    font-size: 21px;
+    text-align: center;
+    font-weight: 600;
+}
+.addForm span {
+    font-size: 20px;
+    font-weight: 500;
+}
+/*Comment widths end*/
+
+
+
+/*Dropdown Switch Start*/
+.category-select {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 2px;
+}
+.category-select h2 {
+    font-weight: 700;
+    margin: auto;
+}
+.category-select select {
+    margin-left: 7px;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    border-width: 2px;
+}
+.category-select .areas {
+    vertical-align: middle;
+    margin-left: 25px;
+    display: flex;
+    align-items: flex-start;
+    width: 35%;
+}
+
+.category-select .files {
+    vertical-align: middle;
+    margin-right: 25px;
+    display: flex;
+    width: 30%;
+    align-items: flex-end;
+}
+
+/*Dropdown Switch End*/
+
+
+/*Button Classes Start*/
+.action-btn{
+    width: 45%;
+    padding: 3px 12px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 7px;
+}
+.action-btn:hover {
+    box-shadow: inset 0 0 1250px 150px rgba(255, 255, 255, 0.1);
+}
+.template-btn .action-btn{
+    width: 20%;
+}
+.delete-btn {
+    background-color: #DC143C;
+}
+.edit-btn {
+    background-color: #023FD8;
+}
+.view-btn {
+    font-weight: 700;
+}
+.view-btn i {
+    color: #023FD8;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+.approve-btn {
+    width: 80%;
+    font-size: 20px;
+    background-color: #49983C;
+}
+.add-btn {
+    width: 250px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.cellEdit .edit-pencil {
+    display:none;
+    position: absolute;
+    border-radius: 30%;
+    top: 45%;
+    left: 45%;
+    padding: 2px 2px;
+}
+
+/*Button Classes End*/
+
+.area .table tbody tr td:not(:first-child) {
+    text-align: left;
+}
+
+/*Table Design Responsiveness starts here */
+@media (max-width: 768px) {
+    .general-header h2 {
+        font-size: 24px;
+        text-align: left;
+        margin: auto;
+        margin-left: 2%;
     }
-    .department-card-container{
-        width: 90%;
-        margin: 50px auto;
-    }
-    .department-card {
+    .control-panel thead tr th:first-child,
+    .control-panel tbody tr td:first-child,
+    .control-panel thead tr th:nth-of-type(n+1),
+    .control-panel tbody tr td:nth-of-type(n+1) {
         width: 100%;
-        background: #fff;
-        border: 1px solid #ccc;
-        margin-right: 25px;
-        margin-bottom: 50px;
-        transition: 0.3s;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-      }
-    .department-heading {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
+    }
+    .area-manager thead tr th:first-child,
+    .area-manager tbody tr td:first-child,
+    .area-manager thead tr th:nth-of-type(n+1),
+    .area-manager tbody tr td:nth-of-type(n+1) {
+        width: 100%;
+        text-align: left;
     }
 
-    .department-row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        /* justify-content: space-around; */
-        flex-flow: wrap;
-    }
-    .multi-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-flow: wrap;
-    }
-    .department-card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-      }
-    .card-header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .card-header img {
-        width: 250px;
-    }
-    .card-body {
-        width: 250px;
-        padding: 30px 20px;
-        text-align: center;
-        font-size: 20px;
-        font-weight: bold;
-        color: #023FD8;
-    }
-    .card-body p {
-        min-height: 4.2em;
-        line-height: 1.4em;
+    .table thead {
+        display: none;
     }
 
-    .card-body .report-btn {
+    .table, .table tbody,.table tr,.table td{
         display: block;
-        text-align: center;
-        margin-top: 10px;
-        text-decoration: none;
-        padding: 10px 5px;
-        font-size: 17px;
-        border-radius: 50px;
-    }
-    .card-body .dci-btn {
-        border: 1px solid #666666;
-        color:#666666;
-    }
-    .card-body .dbe-btn {
-        border: 1px solid #EF1833;
-        color:#EF1833;
-    }
-    .card-body .dte-btn {
-        border: 1px solid #49983C;
-        color:#49983C;
-    }
-    .card-body .dci-btn:hover {
-        color: #fff;
-        background-color: #666666;
+        width: 100%;
     }
 
-    .card-body .dbe-btn:hover {
-        color: #fff;
-        background-color: #EF1833;
+    .table tr {
+        margin-bottom: 15px;
     }
 
-    .card-body .dte-btn:hover {
-        color: #fff;
-        background-color: #49983C;
+    .table tbody tr td {
+        text-align: left;
+        padding-left: 40%;
+        background-color: transparent;
+        position: relative;
+        font-size: 15px;
     }
 
-/*Select Program ends here*/
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 40%;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: left;
+    }
+    .action-btn{
+        width: 30%;
+        padding: 3px 7px;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 7px;
+    }
+}
+/*Responsiveness ends here */
+/*#endregion Table Design Ends here*/
+
+/*#region Modal Designs Start*/
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.244);
+}
+.modal-dialog{
+    min-width: 35%;
+    max-width: 50%;
+}
+.area_manager .modal-dialog{
+    min-width: 15%;
+    max-width: 30%;
+}
+.modal-content{
+    margin-top: 20%;
+    padding:15px;
+}
+.modal-header h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+/*Modal Design Responsiveness Start*/
+@media (max-width: 969px) {
+    #editModal .modal-dialog{
+        min-width: 45%;
+        max-width: 72%;
+    }
+}
+/*Modal Design Responsiveness End*/
+
+.btn-close i{
+    color: darkgray;
+    size: 25px;
+}
+.input-bg{
+    background-color: #F2F2F2;
+    line-height: 1.4em;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+.semilong-input{
+    min-height: 6em;
+    max-height: 8em;
+
+}
+.input-label{
+    font-weight: 600;
+    font-size: 17px;
+}
+.modal-btn{
+    color: white;
+    size: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 6px 16px;
+    margin-right: 12px;
+    float: right;
+}
+.btn-modal-edit{
+    background-color: #023FD8;
+}
+.btn-modal-delete{
+    background-color: #DC143C;
+}
+
+
+/*#endregion Modal Designs End*/
+
+/*File Manager Div Start*/
+.files {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/*File Manager Div End*/
