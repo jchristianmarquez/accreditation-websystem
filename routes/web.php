@@ -10,6 +10,7 @@ use App\Http\Controllers\SelectProgramController;
 use App\Http\Controllers\TableInfoController;
 use App\Http\Controllers\PublishController;
 use App\Http\Controllers\UserSettingController;
+use App\Http\Controllers\AccreditorPageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,10 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/department-home', function () {
+    return view('frames/landing');
+});
 
 require __DIR__.'/auth.php';
 
@@ -108,6 +113,13 @@ Route::controller(PublishController::class)->group(function(){
     // Route::post('update-cell', 'update');
 
     Route::post('delete-comment', 'destroy');
+});
+
+Route::controller(AccreditorPageController::class)->group(function(){
+
+    Route::get('accreditor/{department}/{report}','index');
+
+    // Route::get('accreditor-page/{program}/{area}/{report}','index');
 });
 
 Route::controller(UserSettingController::class)->group(function(){
