@@ -117,9 +117,11 @@ Route::controller(PublishController::class)->group(function(){
 
 Route::controller(AccreditorPageController::class)->group(function(){
 
-    Route::get('accreditor/{department}/{report}','index');
+    Route::get('accreditor/{department}/{area}/{report}','index');
 
-    // Route::get('accreditor-page/{program}/{area}/{report}','index');
+    Route::get('accreditation','landingPage');
+
+    Route::get('accreditor-back','landingPage');
 });
 
 Route::controller(UserSettingController::class)->group(function(){
