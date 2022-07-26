@@ -10,7 +10,7 @@ use App\Models\Report;
 
 class AccreditorPageController extends Controller
 {
-    public function index($program, $report){
+    public function index($program,$area, $report){
 
         $department = Program::where('shortname', $program)->value('department');
 
@@ -28,12 +28,21 @@ class AccreditorPageController extends Controller
 
         return view('accreditor-page',[
             'program' => $program,
+            'area' => $area,
             'dept' => $dept,
             'report' => $report,
             'programs' => Program::all(),
             'reportTypes' => Report::all(),
             'deptTitle' => $deptTitle,
             'areaList' => Area::all()
+        ]);
+    }
+
+    public function landingPage(){
+        return view('accreditor-landing',[
+            'programs' => Program::all(),
+            'departments' => Department::all(),
+            'reportTypes' => Report::all()
         ]);
     }
 }

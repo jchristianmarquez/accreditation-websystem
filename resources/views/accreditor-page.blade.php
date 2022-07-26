@@ -5,7 +5,7 @@
             <h2 class="dci-heading-one">{{$deptTitle}}<br><p>{{$reportTypes->where('reportType', $report)->first()->reportLabel}}</p></h2>
         </div>
         <div class="dci-back-btn">
-            <a href="#"><i class="fa-solid fa-chevron-left"></i>Back</a>
+            <a href="/accreditor-back"><i class="fa-solid fa-chevron-left"></i>Back</a>
         </div>
     </header>
     <!-- sidebar starts here-->
@@ -29,7 +29,7 @@
                 <ul class="dci-menu-link">
                     @foreach ($areaList as $area)
                     <li class="dci-nav-link">
-                        <a href="#">
+                        <a href="/accreditor/{{$program}}/{{$area->areaNumber}}/{{$report}}">
                             <i class="fa-solid fa-{{$area->areaNumber}} icon"></i>
                             <span class="dci-nav-text">{{$area->areaName}}</span>
                         </a>
